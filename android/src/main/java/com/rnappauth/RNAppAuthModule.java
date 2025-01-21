@@ -25,6 +25,7 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.ReadableType;
+import com.facebook.react.bridge.Arguments;
 
 import com.rnappauth.utils.MapUtil;
 import com.rnappauth.utils.MutableBrowserAllowList;
