@@ -141,11 +141,19 @@ export interface EndSessionResult {
   state: string;
 }
 
+export interface AuthGateway {
+  url: string;
+  codeVerifier: string;
+  nonce: string;
+}
+
 export function prefetchConfiguration(config: AuthConfiguration): Promise<void>;
 
 export function register(config: RegistrationConfiguration): Promise<RegistrationResponse>;
 
 export function authorize(config: AuthConfiguration): Promise<AuthorizeResult>;
+
+export function getAuthGateway(config: AuthConfiguration): Promise<AuthGateway>;
 
 export function refresh(
   config: AuthConfiguration,
